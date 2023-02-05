@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleTest.css">
+    <title>Metal Quest!</title>
+</head>
+
+<body>
+    <div class="container" style="position: relative;">
+        <aside id="top-right">
+            <h2 id="movement"></h2>
+        </aside>
+        <aside id="title">
+            <h2 id="titleID">Metal Quest</h2>
+        </aside>
+
+        <aside id="log">
+            <div style="background-color: black; display: inline;">
+                <div id="mobLog">
+                    <p id="line1"></p>
+                    <p id="line2"></p>
+                    <p id="line3"></p>
+
+                </div>
+                <div id="yourLog">
+                    <p id="log1"></p>
+                    <p id="log2"></p>
+                    <p id="log3"></p>
+
+                </div>
+            </div>
+        </aside>
+        <main style="display: flex;">
+
+            <div id="overlap"
+                style="background-color: black; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0; pointer-events: none;">
+                <h1 id="game-over">GAME OVER</h1>
+            </div>
+            <aside id="controls">
+                <h2 id="innercontrols">Reach the door<br>
+                    Action: <span style="color: orangered">X</span><br>Move: <span style="color: orange">W</span><span style="color: rgb(28, 145, 240)">A</span><span style="color: greenyellow">S</span><span style="color: red">D</span><br>Fight: Mouse</h2>
+
+            </aside>
+            <canvas id="game">
+                <!-- play it, a game -->
+            </canvas>
+            <div id="menu" style="
+            background-color: rgb(91, 90, 89, .6);
+            width: 200px; height: 200px; position: fixed; top: 530px;">Action
+                <div id="attack">
+                    <h2 class="button">Attack</h2>
+                </div>
+                <div id="tp">
+                    <h2 id="tpReady" class="button">Heavy Metal</h2>
+                </div>
+                <div id="heal">
+                    <h2 class="button">Flask</h2>
+                </div>
+            </div>
+            <aside id="info">
+                <h2 id="innerinfo"></h2>
+                <h2 id="innerinfo2"></h2>
+            </aside>
+            
+
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script src="./characters.js"></script>
+
+</body>
+
+</html>
